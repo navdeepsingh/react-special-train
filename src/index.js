@@ -9,7 +9,8 @@ class App extends React.Component {
         React.Fragment,
         null,
         React.createElement("h1", null, "Test from Playground Reactjs"),
-        React.createElement("p", null, "THis is playground for react")
+        React.createElement("p", null, "THis is playground for react"),
+        React.createElement("p", null, "This is awesome..")
       )
     )
   }

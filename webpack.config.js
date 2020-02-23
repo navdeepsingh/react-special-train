@@ -7,9 +7,10 @@ module.exports = {
       app: './src/index.js'
     },
     devtool: 'inline-source-map',
-   devServer: {
+    devServer: {
      contentBase: './dist',
-   },
+     hot: true
+    },
    plugins: [
       new HtmlWebpackPlugin({
         title: 'Development',
@@ -29,7 +30,7 @@ module.exports = {
       ],
     },
     output: {
-      filename: '[name].bundle.js',
+      filename: '[hash].bundle.js',
       path: path.resolve(__dirname, 'dist'),
     }
 };
